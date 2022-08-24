@@ -1,6 +1,6 @@
 *{
     padding: 0;
-    margin: 0px;
+    margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
@@ -20,7 +20,7 @@ a{
     font-weight: bold;
 }
 h1,h2,h3,h4,h5,h6,p{
-    margin: 15px 0;
+    margin: 0;
 }
 .flex{
     display: flex;
@@ -129,7 +129,6 @@ h1,h2,h3,h4,h5,h6,p{
     display: flex;
     flex-direction: row;
     margin: 0px 20px 0px 20px ;
-    height: 650px;
     padding-top: 60px;
 }
 .sec-one-left{
@@ -164,16 +163,16 @@ h1,h2,h3,h4,h5,h6,p{
     font-weight: bold;
     font-family: 'Mouse Memoirs', sans-serif;
     letter-spacing: 2px;
-    display: flex;
-
 }
 
 .section-two img{
-    width: 20%;
-    height: 150px;
-    display: flex;  
-    justify-content: space-around;
+    height: 250px;
     border:3px solid black;
+}
+
+.skillset-img {
+    display: flex;
+    justify-content: space-around;
 }
 
 .section-three{
@@ -190,15 +189,13 @@ h1,h2,h3,h4,h5,h6,p{
     letter-spacing: 2px;
 }
 .project-box{
-    display: flex;
-    flex-direction: row;
     font-size: 30px;
-    text-align: left;
+    text-align: center;
 }
 .Project-container{
-    width: 30%;
     background-size: cover;
     text-decoration: wavy;
+    padding-bottom: 30px;
 }
 .section-four{
     margin: 0px;
@@ -219,13 +216,11 @@ h1,h2,h3,h4,h5,h6,p{
 }
 .contact-top p{
     font-weight: 300;
-    width: 70%;
     margin: 5px auto;
     font-size: 20px;
 }
 .contact-bottom{
     margin-top: 0px!important;
-    display: flex;
 }
 .form input[type = "text"],.form input[type = "email"],.form textarea{
     width: 100%;
@@ -236,14 +231,18 @@ h1,h2,h3,h4,h5,h6,p{
     outline: none;
     border-radius: 5px;
 }
-.contact-bottom .form{
-    padding: 0 20px;
+.contact-bottom{
+    padding: 40px;
+    
 }
 .contact-middle{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    width: 50%;
     padding: 6px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 .contact-middle div{
     text-align: center;
@@ -252,27 +251,20 @@ h1,h2,h3,h4,h5,h6,p{
     color: black;
     border:2px solid white;
 }
-.contact-middle div span{
-    display: block;
-}
 .contact-icon{
     font-size: 10px;
 }
 
 .contact-middle div p{
+    text-align: center;
     font-weight: 300;
     opacity: 0.7;
+    padding: 10px;
 }
 .footer{
     background:  rgb(177, 219, 214);;
     color: black;
     padding: 20px 20px;
-    text-align: center;
-}
-.footer-container{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
 }
 .footer-container > div{
     margin: 10px 0;
@@ -281,19 +273,19 @@ h1,h2,h3,h4,h5,h6,p{
     color: black;
     font-size: 36px;
     font-weight: 500;
+    text-align: center;
 }
 .footer-container p{
     font-size: 15px;
-}
 
+}
 .footer >p{
     text-align: center;
     font-size: 14px;
 }
 .footer-text{
-    width: 50%;
     font-family: 'Mouse Memoirs', sans-serif;
-    text-align: bottom;
+    text-align: center;
 
 }
 .footer-text  h2{
@@ -324,6 +316,19 @@ h1,h2,h3,h4,h5,h6,p{
 .btn:hover{
     background: rgb(0, 0, 0);
     color: white;
+}
+
+
+@media (max-width: 1080px) {
+    .skillset-img {
+        display: block;
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contact-middle {
+        width: 80%;
+    }
 }
 
 
